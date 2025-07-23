@@ -10,3 +10,9 @@ Acessar por: http://127.0.0.1:8000/
 
 ### Rodar como web service
 Acessar por: https://whapi-bot-o6gm.onrender.com/
+
+
+### Deploy 
+Acessar Render.com \
+Abrir projeto Whapi-bot \
+Deploy latest commit
