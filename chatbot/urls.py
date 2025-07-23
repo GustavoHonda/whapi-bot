@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.http import HttpResponse
+from django.urls import path, include
 
 def health_check(request):
     return HttpResponse("OK", status=200)
@@ -24,5 +25,6 @@ def health_check(request):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("healthz", health_check),
+    path('', include('whapi_chatbot_app.urls')), 
 ]
 
