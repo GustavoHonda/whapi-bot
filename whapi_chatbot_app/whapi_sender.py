@@ -1,9 +1,9 @@
-from flask import Flask, request, jsonify
-import requests
-from requests_toolbelt.multipart.encoder import MultipartEncoder
 import os
-from dotenv import load_dotenv
 import openai
+from requests_toolbelt.multipart.encoder import MultipartEncoder
+import requests
+from flask import Flask, request, jsonify
+from dotenv import load_dotenv
 
 # Load environment variables from .env file
 load_dotenv()  # Loads API keys and config
